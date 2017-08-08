@@ -1,4 +1,6 @@
-class woocommerceOrderCustom{
+<?php 
+
+	class woocommerceOrderCustom{
 	
 	function __construct(){
   	  add_action( 'woocommerce_add_order_item_meta', array($this,'my_field_order_meta_handler'), 1, 3 );
@@ -20,4 +22,4 @@ class woocommerceOrderCustom{
 } 
 $woocommerceOrderCustom = new woocommerceOrderCustom();
 
-  
+  ?>
